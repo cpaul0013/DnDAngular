@@ -1,0 +1,11 @@
+<h1>Famous People</h1>
+<div class="container" *ngFor = "let D of devsList"> 
+ <p>{{D.firstName}} {{D.lastName}} </p>
+ <div class="row">
+    <button data-bs-toggle="collapse" data-bs-target="#demo">Toggle Info</button>
+    <div id="demo" class="collapse">
+        <p>{{ D.innovation }} {{ D.year }}</p>
+    </div>
+</div>
+
+
